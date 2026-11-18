@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "deny": [
+      "Read(~/.config/swarm-lab/**)",
+      "Edit(~/.config/swarm-lab/**)",
+      "Read(~/.claude/.credentials.json)",
+      "Read(~/.config/anthropic/**)",
+      "Read(~/.codex/auth.json)",
+      "Read(~/.ssh/**)",
+      "Read(~/.local/share/keyrings/**)",
+      "Read(~/.aws/**)",
+      "Bash(printenv)",
+      "Bash(printenv *)",
+      "Bash(env)"
+    ],
+    "disableBypassPermissionsMode": "disable"
+  }
+}

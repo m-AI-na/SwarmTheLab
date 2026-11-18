@@ -1,0 +1,25 @@
+# Workshop environment for "Swarm in the Lab".
+# Python must be 3.12: Virtual Lab needs 3.12+, CELLxGENE Census supports up to 3.12.
+#   conda env create -f environment.yml
+#   conda activate swarm-lab
+#   python -m ipykernel install --user --name swarm-lab --display-name "Workshop (Python 3.12)"
+name: swarm-lab
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - ipykernel
+  - uv
+  - leidenalg          # Leiden clustering for scanpy
+  - python-igraph
+  - pip:
+      - virtual-lab>=1.2.0
+      - openai
+      - claude-agent-sdk
+      - fastmcp
+      - scanpy
+      - anndata
+      - cellxgene-census
+      - pandas
+      - biopython
